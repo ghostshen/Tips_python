@@ -71,7 +71,8 @@ l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 	import tensorflow as tf
 flags = tf.app.flags
 	FLAGS = flags.FLAGS
-	flags.DEFINE_string('dataset', 'test_2_multi', 'Dataset string.') #【（名称），（参数值），（备注）】
+	flags.DEFINE_string('dataset', 'test_2_multi', 'Dataset string.') 
+	#[(名称)，(参数值)，(备注)]
 	```
 	
 9. ##### split()计数分割
@@ -83,11 +84,13 @@ flags = tf.app.flags
 	# num：表示分割次数。如果存在参数num，则仅分隔成 num+1 个子字符串，并且每一个子字符串可以赋给新的变量
 	# [n]： 表示选取第n个分片，也可以是[0:n]表示选取第0片到第n片，函数返回一个list.
 	```
+	
 10. ##### numpy输出设置
 	
 	```python
 	np.set_printoptions(linewidth=90)
 	```
+	
 11. ##### 服务器查看GPU使用情况：
 	
 	```python
