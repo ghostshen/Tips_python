@@ -33,7 +33,7 @@
 5. ##### 进度条
 	
 	```python
-from tqdm import tqdm
+	from tqdm import tqdm
 	for i in tqdm(range(num_walks)):
 	    pass
 	```
@@ -42,7 +42,7 @@ from tqdm import tqdm
 	
 	```python
 	from random import sample
-l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+	l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 	print(sample(l, 5)) # 随机抽取5个元素
 	```
 	
@@ -69,7 +69,7 @@ l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 	
 	```python
 	import tensorflow as tf
-flags = tf.app.flags
+	flags = tf.app.flags
 	FLAGS = flags.FLAGS
 	flags.DEFINE_string('dataset', 'test_2_multi', 'Dataset string.') 
 	#[(名称)，(参数值)，(备注)]
