@@ -27,22 +27,22 @@
 	
 	```python
 	m = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
-	mi = dict(zip(m.values(), m.keys()))
-#mi:{1: 'a', 2: 'b', 3: 'c', 4: 'd'}
-	```
+	mi = dict(zip(m.values(), m.keys())) # mi:{1: 'a', 2: 'b', 3: 'c', 4: 'd'}
+```
 	
 5. ##### 进度条
 	
 	```python
 from tqdm import tqdm
 	for i in tqdm(range(num_walks)):
+	    pass
 	```
 	
 6. ##### 随机抽取元素
 	
 	```python
 	from random import sample
-l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 	print(sample(l, 5)) # 随机抽取5个元素
 	```
 	
@@ -71,17 +71,17 @@ l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 	import tensorflow as tf
 flags = tf.app.flags
 	FLAGS = flags.FLAGS
-	flags.DEFINE_string('dataset', 'test_2_multi', 'Dataset string.') 【（名称），（参数值），（备注）】
+	flags.DEFINE_string('dataset', 'test_2_multi', 'Dataset string.') #【（名称），（参数值），（备注）】
 	```
 	
 9. ##### split()计数分割
 	
 	```python
 	str.split(str=" ",num=string.count(str))[n]
-	#参数说明：
-	#str： 表示为分隔符，默认为空格，但是不能为空(”)。若字符串中没有分隔符，则把整个字符串作为列表的一个元素
-#num：表示分割次数。如果存在参数num，则仅分隔成 num+1 个子字符串，并且每一个子字符串可以赋给新的变量
-	#[n]： 表示选取第n个分片，也可以是[0:n]表示选取第0片到第n片，函数返回一个list。
+	# 参数说明：
+	# str： 表示为分隔符，默认为空格，但是不能为空(”)。若字符串中没有分隔符，则把整个字符串作为列表的一个元素
+# num：表示分割次数。如果存在参数num，则仅分隔成 num+1 个子字符串，并且每一个子字符串可以赋给新的变量
+	# [n]： 表示选取第n个分片，也可以是[0:n]表示选取第0片到第n片，函数返回一个list。
 	```
 	
 10. ##### numpy输出设置
