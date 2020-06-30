@@ -190,7 +190,7 @@
     np.greater(a, b) # 返回a每个元素是否大于b中对应位置元素的bool值
     ```
 
-21. tf.gather()
+21. ##### tf.gather()
 
     ```python
     temp = tf.range(0,10)*10 + tf.constant(1,shape=[10])
@@ -206,4 +206,45 @@
     ```
     
 
+23. ##### numpy.delete()
+
+    ```python
+    import numpy as np
+    a = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+    index = [2, 3, 6]
+    new_a = np.delete(a, index)
+    # new_a:[1, 2, 5, 6, 8, 9]
+    ```
+
+24. ##### numpy.append()
+
+    ```python
+    a = np.array([1,2,3,4])
+    b = np.append(a,[1,1])
+    # b:[1,2,3,4,1,1]
+    
+    a = array([[ 0,  1,  2,  3],[ 4,  5,  6,  7],[ 8,  9, 10, 11]])
+    b = np.append(a,[[1,1,1,1]],axis=0)
+    # b:[[ 0,  1,  2,  3],[ 4,  5,  6,  7],[ 8,  9, 10, 11],[ 1,  1,  1,  1]]
+    ```
+
+25. ##### numpy.insert()
+
+    ```python
+    # numpy.insert(arr,obj,value,axis=None)
+    # arr:为目标向量
+    # obj:为目标位置
+    # value:为想要插入的数值
+    # axis:为插入的维度
+    a = array([[ 0,  1,  2,  3],[ 4,  5,  6,  7],[ 8,  9, 10, 11]])
+    b = np.insert(a,1,[1,1,1,1],0)
+    """
+    b:array([[ 0,  1,  2,  3],
+           [ 1,  1,  1,  1],
+           [ 4,  5,  6,  7],
+           [ 8,  9, 10, 11]])
+    """
+    ```
+
+    
 
