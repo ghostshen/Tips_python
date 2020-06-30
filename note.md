@@ -65,8 +65,6 @@ l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 	os.path.exists(directory) #如果目录不存在就返回False
 	```
 	
-	
-	
 8. ##### terminal跑代码设置参数（基于tensorflow）
 	
 	```python
@@ -75,8 +73,6 @@ flags = tf.app.flags
 	FLAGS = flags.FLAGS
 	flags.DEFINE_string('dataset', 'test_2_multi', 'Dataset string.') 【（名称），（参数值），（备注）】
 	```
-	
-	
 	
 9. ##### split()计数分割
 	
@@ -118,8 +114,6 @@ flags = tf.app.flags
     dict.clear();  # 清空词典所有条目
     ```
 
-    
-
 14. ##### Python字典的pop()方法（删除字典给定键 key 所对应的值，返回值为被删除的值）
 
     ```python
@@ -128,8 +122,6 @@ flags = tf.app.flags
     print pop_obj   # 输出 ：我的博客地址
     ```
 
-    
-
 15. ##### Python字典的popitem()方法（随机返回并删除字典中的一对键和值）
 
     ```python
@@ -137,8 +129,6 @@ flags = tf.app.flags
     pop_obj=site.popitem() # 随机返回并删除一个键值对
     print pop_obj   # 输出结果可能是{'url','http://blog.csdn.net/uuihoo/'}
     ```
-
-    
 
 16. ##### del 全局方法（能删单一的元素也能清空字典，清空只需一项操作）
 
